@@ -68,8 +68,31 @@ function App() {
           paint: {
             "circle-opacity": 0.75,
             "circle-stroke-width": 1,
-            "circle-radius": 4,
-            "circle-color": "#FFEB3B"
+            "circle-radius": [
+              'interpolate',
+              ['linear'],
+              ['get', 'cases'],
+              1, 4,
+              1000, 8,
+              4000, 10,
+              8000, 14,
+              12000, 18,
+              100000, 40,
+              1000000, 50
+            ],
+            "circle-color": [
+              "interpolate",
+              ["linear"],
+              ["get", "cases"],
+              1, '#ffffcc',
+              5000, '#ffeda0',
+              10000, '#fed976',
+              25000, '#feb24c',
+              50000, '#fd8d3c',
+              75000, '#fc4e2a',
+              100000, '#e31a1c',
+              1000000, '#b10026'
+            ],
           }
         })
       })
