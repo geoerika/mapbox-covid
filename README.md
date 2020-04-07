@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Created after: https://dev.to/alemesa/how-to-create-a-covid-19-map-with-mapbox-and-react-3jgf
+
 ## Available Scripts
 
 In the project directory, you can run:
